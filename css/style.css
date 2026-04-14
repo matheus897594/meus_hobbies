@@ -1,0 +1,90 @@
+/* Importando uma fonte cursiva elegante */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Imagem de fundo fixa e cobrindo tudo */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/1000141244.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ffcc00; /* Detalhe Amarelo */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #ff3333; /* Vermelho no hover */
+}
+
+/* Centralização Total do Conteúdo */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Texto em Destaque Amarelo */
+h1 {
+    color: #ffcc00;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Letra Cursiva com Animação de Pulo */
+.cursiva {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+    display: inline-block;
+    animation: jump 1.5s infinite;
+    margin-top: 20px;
+}
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Estilo dos textos de Hobbies e Contato */
+.card-black {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    border-top: 4px solid #ff3333; /* Detalhe Vermelho */
+    max-width: 600px;
+}
+
+.hobby-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+strong { color: #ffcc00; }
